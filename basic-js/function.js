@@ -1,32 +1,20 @@
-function add(num1, num2) {
-    console.log(num1, num2);
-    var sum = num1 + num2;
-
+function add(n1, n2) {
+    console.log(n1, n2);
+    var sum = n1 + n2;
     return sum;
 }
 
-// var total = add(80, 20);
-
-// console.log(total);
-
 function singara(money) {
-    var singaraPrice = 10;
-    quantity = money / singaraPrice;
+    var singaraPerPice = 10;
+    quantity = money / singaraPerPice;
     return quantity;
 }
 var myMoney = 200;
-var foodItem = singara(myMoney);
-
-// console.log(foodItem);
-
 
 function square(number) {
-    var result = Math.pow(number, 2);
+    var result = Math.pow(number, 3);
     return result;
 }
-
-// var result = square(6);
-// console.log(result);
 
 var mobile = {
     name: 'samsung',
@@ -42,12 +30,12 @@ var myComputer = {
 var properties = Object.keys(myComputer); //get all keys of an object 
 var propertiesValue = Object.values(myComputer); //get all values of an object 
 
-// console.log(myComputer);
 myComputer.name = 'HP';
-// console.log(myComputer);
+//console.log(myComputer);
+
 var name = 'name';
 myComputer[name] = 'Samsung';
-// console.log(myComputer);
+//console.log(myComputer);
 // ----------------------------------------
 var shoppingCart = {
     books: 12,
@@ -57,7 +45,7 @@ var shoppingCart = {
     mouse: 21,
     sunglass: 1
 }
-
+//console.log(shoppingCart['books']);
 
 var keys = Object.keys(shoppingCart);
 var values = Object.values(shoppingCart);
@@ -70,7 +58,7 @@ for (var i = 0; i < keys.length; i++) {
 
 for (var propertiesName in shoppingCart) {
     var value = shoppingCart[propertiesName];
-    // console.log(propertiesName, value);
+    //console.log(propertiesName, value);
 }
 
 function foo() {
@@ -83,13 +71,16 @@ function bar() {
 }
 //foo();
 
-function make_avg(num1, num2, num3) {
-    var sum = num1 + num2 + num3;
+function make_avg(n1, n2, n3) {
+    var sum = n1 + n2 + n3;
     var avg = sum / 3;
     return avg;
 }
-var values = make_avg(10, 2, 3);
-// console.log(values);
+var result = make_avg(10, 20, 30);
+//console.log(result);
+
+
+
 
 function make_avg1(arr) {
     var sum = 0;
@@ -121,4 +112,19 @@ function even_odd(number) {
 
 //console.log(even_odd(20));
 var movie = { name: 'Din the day', model: 'sky' };
-console.log(movie["model"]);
+//console.log(movie["model"]);
+
+
+function evenOdd(num) {
+    var add = '+';
+    var minus = '-';
+    if (num % 2 == 0) {
+        console.log(num + ' is even number');
+        return add;
+    } else {
+        console.log(num + ' is odd number');
+        return minus;
+    }
+}
+
+console.log(evenOdd(50));
